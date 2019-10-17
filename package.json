@@ -4,7 +4,19 @@
   "main": "index.js",
   "author": "Ludwig Magnusson <ludwig.magnusson@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "export NODE_ENV=production && node app",
+    "predev": "yarn && mkdir -p dist",
+    "dev": "export NODE_ENV=development && yarn startWatcher",
+    "startWatcher": "nodemon -i dist -i lib devapp"
+  },
   "dependencies": {
-    "minipac": "^2.1.0"
+    "minipac": "^2.1.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-router-dom": "^5.1.2"
+  },
+  "devDependencies": {
+    "@mediatool/eslint-config-mediatool": "^0.1.12"
   }
 }
