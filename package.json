@@ -1,0 +1,10 @@
+{
+  "name": "minipac-starter",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "Ludwig Magnusson <ludwig.magnusson@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "minipac": "^2.1.0"
+  }
+}
